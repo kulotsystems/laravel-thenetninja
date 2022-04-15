@@ -81,7 +81,7 @@ To solve this, follow these steps:
 ---
 
 #### 13. [Migration Basics](https://github.com/kulotsystems/laravel-thenetninja/tree/60ba93fb341bd0b9cd7dcc513a9d06f703b581d4)
-* Do not worry about missing class names in the migration files. They are not required anymore since **Laravel 9**.
+* *Do not worry about missing class names in the migration files. They are not required anymore since **Laravel 9***.
 
 
 ---
@@ -91,8 +91,8 @@ To solve this, follow these steps:
 ---
 
 #### 15. [Eloquent Models](https://github.com/kulotsystems/laravel-thenetninja/tree/974cc4f9e72dc4b305f5e27dd07b924b845728d1)
-* You can skip adding a value on the price column. Nevermind the error that will appear on **phpMyAdmin**.
-* Models will be created inside the app/Models folder instead.
+* *You can skip adding a value on the price column. Nevermind the error that will appear on **phpMyAdmin***.
+* *Models will be created inside the app/Models folder instead*.
 
 
 ---
