@@ -13,7 +13,7 @@
             <select name="type" id="type">
                 <option value="margarita">Margarita</option>
                 <option value="hawaiian">Hawaiian</option>
-                <option value="vege supreme">Veg Supreme</option>
+                <option value="veg supreme">Veg Supreme</option>
                 <option value="volcano">Volcano</option>
             </select>
 
@@ -24,6 +24,14 @@
                 <option value="thin & crispy">Thin & Crispy</option>
                 <option value="thick">Thick</option>
             </select>
+
+            <fieldset>
+                <label for="">Extra toppings:</label>
+                <label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label><br>
+                <label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label><br>
+                <label><input type="checkbox" name="toppings[]" value="garlic"> Garlic</label><br>
+                <label><input type="checkbox" name="toppings[]" value="olives"> Olives</label><br>
+            </fieldset>
 
             <input type="submit" value="Order Pizza">
 
