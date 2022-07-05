@@ -153,20 +153,61 @@ Route::post('/pizzas/{id}', [PizzaController::class, 'destroy']);
 
 #### 23. [Using SASS](https://github.com/kulotsystems/laravel-thenetninja/tree/31b5979b50186be33e32d7e7744563a19977b389)
 Please follow these steps:
-1. Create the `sass` folder inside `resources`.
-2. Create the `main.scss` file and copy the content of `public/css/main.css` to it.
-3. Run `npm run dev` twice because it's your first time executing this command.
-4. Replace the contents of `resources/main.scss` by the contents of [**this file**](https://github.com/kulotsystems/laravel-thenetninja/blob/31b5979b50186be33e32d7e7744563a19977b389/resources/sass/main.scss).
-4. Run `npm run watch` command.
+1. Replace the contents of your `package.json` with the contents of [**this file**]().
+2. Replace the contents of your `vite.config.js` with the contents of [**this file**]().
+3. Create the `sass` folder inside `resources`.
+4. Create the `main.scss` file and copy the content of `public/css/main.css` to it.
+5. Replace the contents of `resources/main.scss` with the contents of [**this file**](https://github.com/kulotsystems/laravel-thenetninja/blob/31b5979b50186be33e32d7e7744563a19977b389/resources/sass/main.scss).
+6. In your `resources/views/layouts/layout.blade.php`,
+   replace
+   ```html
+   <link rel="stylesheet" href="/css/main.css">
+   ```
+   with:
+    ```html
+    @vite('resources/sass/main.scss')
+    ```
+7. Run `npm install` command.
+7. Run `npm run dev` command on a different terminal session.
 
 ---
 
 #### 24. [Laravel Auth Setup](https://github.com/kulotsystems/laravel-thenetninja/tree/46e161a070f6e8ca69d6652881d92cdef6b4c395)
-After executing the commands in this lesson,
-1. Run `npm update vue-loader` command.
-2. Run `npm run dev` again.
+1. In your `resources/sass/app.scss`, replace
+   ```scss
+   // Bootstrap
+   @import '~bootstrap/scss/bootstrap';
+   ```
+   with:
+    ```scss
+    // Bootstrap
+    @import './bootstrap/scss/bootstrap';
+    ```
 
-
+2. In your `resources/views/layouts/app.blade.php`,
+replace 
+    ```html
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    ```
+    with:
+    ```html
+    <!-- Scripts -->
+    @vite('resources/js/app.js')
+    ```
+    also replace
+    ```html
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    ```
+    with:
+    ```html
+    <!-- Styles -->
+    @vite('resources/sass/app.scss')
+    @vite('resources/sass/main.scss')
+    ```
+7. Run `npm run dev` again.
 
 ---
 
