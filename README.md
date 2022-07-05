@@ -153,8 +153,8 @@ Route::post('/pizzas/{id}', [PizzaController::class, 'destroy']);
 
 #### 23. [Using SASS](https://github.com/kulotsystems/laravel-thenetninja/tree/31b5979b50186be33e32d7e7744563a19977b389)
 Please follow these steps:
-1. Replace the contents of your `package.json` with the contents of [**this file**]().
-2. Replace the contents of your `vite.config.js` with the contents of [**this file**]().
+1. Replace the contents of your `package.json` with the contents of [**this file**](https://github.com/kulotsystems/laravel-thenetninja/blob/cd128ac38e5b8fbb06bdc22f54594f00c270ac74/package.json).
+2. Replace the contents of your `vite.config.js` with the contents of [**this file**](https://github.com/kulotsystems/laravel-thenetninja/blob/cd128ac38e5b8fbb06bdc22f54594f00c270ac74/vite.config.js).
 3. Create the `sass` folder inside `resources`.
 4. Create the `main.scss` file and copy the content of `public/css/main.css` to it.
 5. Replace the contents of `resources/main.scss` with the contents of [**this file**](https://github.com/kulotsystems/laravel-thenetninja/blob/31b5979b50186be33e32d7e7744563a19977b389/resources/sass/main.scss).
